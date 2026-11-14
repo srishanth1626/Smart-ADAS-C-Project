@@ -1,0 +1,33 @@
+=================================================
+       SMART ADAS - COLLISION WARNING DEMO       
+=================================================
+C Programming Mini Project | Console Simulation
+
+MAIN MENU
+1. Analyse a driving situation
+2. View model settings and assumptions
+3. About this project
+4. Exit
+Enter your choice (1-4): 
+--- ENTER SIMULATED VEHICLE DATA ---
+Vehicle speed (km/h, 0-200): Distance to obstacle (metres, 0-500): 
+========== ADAS ANALYSIS RESULT ==========
+Vehicle speed              : 80.0 km/h
+Distance to obstacle       : 10.0 m
+Estimated reaction distance: 33.3 m
+Estimated braking distance: 41.2 m
+Estimated stopping distance: 79.5 m (includes 5.0 m margin)
+Estimated time to obstacle : 0.45 seconds
+
+DRIVER ALERT: DANGER - COLLISION RISK
+The available distance is at or below the estimated stopping distance.
+The prototype would issue an urgent collision warning.
+=========================================
+
+
+MAIN MENU
+1. Analyse a driving situation
+2. View model settings and assumptions
+3. About this project
+4. Exit
+Enter your choice (1-4): Thank you for trying the ADAS simulation. Goodbye!

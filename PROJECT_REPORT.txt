@@ -1,0 +1,92 @@
+PROJECT TITLE
+SMART ADAS - FORWARD COLLISION WARNING SYSTEM USING C PROGRAMMING
+
+1. ABSTRACT
+Advanced Driver Assistance Systems (ADAS) help improve road safety by
+supporting drivers with warnings and assistance. This mini-project presents
+a simple Forward Collision Warning (FCW) simulation developed using the C
+programming language. The user enters the vehicle speed and the distance to
+an obstacle. The program estimates the distance travelled during driver
+reaction time and the braking distance. It compares the estimated stopping
+distance with the available gap and displays SAFE, CAUTION or DANGER. The
+project demonstrates basic ADAS logic through a menu-driven C application.
+
+2. OBJECTIVES
+- To understand the basic idea of a Forward Collision Warning system.
+- To calculate an approximate stopping distance from vehicle speed.
+- To compare stopping distance with the distance to an obstacle.
+- To display an appropriate warning based on the calculated risk.
+- To apply C concepts such as functions, conditions, loops and input handling.
+
+3. INTRODUCTION
+A Forward Collision Warning system is an ADAS feature intended to warn a
+driver when the vehicle is getting too close to an object or vehicle ahead.
+In a real vehicle, sensors such as radar or cameras may estimate the distance
+and relative movement of objects. This project is a simplified classroom
+simulation: the user manually enters speed and obstacle distance instead of
+using physical sensors.
+
+4. WORKING PRINCIPLE
+The program follows these steps:
+1. The user enters vehicle speed in kilometres per hour (km/h).
+2. The user enters the distance to the obstacle in metres.
+3. Speed is converted into metres per second:
+       speed (m/s) = speed (km/h) / 3.6
+4. Reaction distance is calculated:
+       reaction distance = speed (m/s) x reaction time
+5. Braking distance is estimated using:
+       braking distance = speed^2 / (2 x assumed deceleration)
+6. A safety margin is added to obtain the estimated stopping distance.
+7. The available obstacle distance is compared with the stopping and warning
+   distances. The program displays an alert category.
+
+5. ALERT LOGIC
+- DANGER: obstacle distance is less than or equal to estimated stopping distance.
+- CAUTION: distance is within the warning zone, or estimated time to obstacle
+  is 3 seconds or less.
+- SAFE: distance is above the warning distance.
+- STATIONARY: entered vehicle speed is zero.
+
+6. SOFTWARE REQUIREMENTS
+- Programming language: C (C99)
+- Compiler: GCC or a C compiler included with Code::Blocks
+- Operating system: Windows, Linux or macOS
+- Hardware: Any computer capable of running a C compiler
+
+7. C CONCEPTS USED
+- Variables and constants
+- Input/output functions (printf and fgets)
+- User-defined functions
+- if-else decision making
+- switch-case selection
+- for loop
+- Arithmetic calculations
+- Input validation
+
+8. LIMITATIONS
+- Speed and obstacle distance are entered manually.
+- No real radar, camera or ultrasonic sensor is connected.
+- The model assumes a fixed reaction time and constant deceleration.
+- Road condition, tyre condition, weather, slope and relative speed are not
+  modelled. Actual stopping distance can differ significantly.
+- The program is only an academic demonstration, not a vehicle safety device.
+
+9. FUTURE ENHANCEMENTS
+- Add simulated sensor readings or connect a suitable distance sensor to a
+  microcontroller for a supervised laboratory demonstration.
+- Add relative-speed input to estimate closing speed more accurately.
+- Add a graphical dashboard and warning sound.
+- Store test results in a file for later analysis.
+- Validate the model using vehicle-specific engineering data and safety tests.
+
+10. CONCLUSION
+The project demonstrates the basic logic of a Forward Collision Warning
+feature using C programming. It accepts speed and obstacle-distance values,
+calculates an approximate stopping distance and displays a warning category.
+It provides a practical introduction to the relationship between programming
+and automotive safety concepts discussed in an ADAS workshop.
+
+REFERENCES / LEARNING BASIS
+- Workshop topic stated on the participation certificate: The Future of
+  Automotive Safety: Advanced Driver Assistance Systems (ADAS).
+- Basic kinematics equation for constant-deceleration stopping distance.
